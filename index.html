@@ -1438,7 +1438,7 @@
 
 
       /* ── Routing tag (conveyor) ── */
-      .result-route { font-size: 14px; font-weight: 700; margin-top: 5px; padding: 3px 8px; border-radius: 4px; opacity: 0; transition: opacity .35s; letter-spacing:.02em; }
+      .result-route { font-size: 9.5px; font-weight: 700; margin-top: 5px; padding: 3px 8px; border-radius: 4px; opacity: 0; transition: opacity .35s; letter-spacing:.02em; }
       .result-route.show { opacity: 1; }
       .result-route.rr-ok { color: #52b580; background: rgba(46,160,100,.12); }
       .result-route.rr-fail { color: #e74c3c; background: rgba(231,76,60,.12); }
@@ -1607,7 +1607,7 @@
       .bullet-item { display: flex; gap: 10px; align-items: flex-start; }
       .bullet-dot { width: 18px; height: 18px; border-radius: 50%; background: var(--cyan-lt); border: 1.5px solid rgba(0,160,220,.35); flex-shrink: 0; margin-top: 1px; display: flex; align-items: center; justify-content: center; }
       .bullet-dot svg { width: 10px; height: 10px; stroke: var(--cyan); stroke-width: 2.5; }
-      .bullet-text { font-size: 14px; color: var(--g600); line-height: 1.65; }
+      .bullet-text { font-size: 13px; color: var(--g600); line-height: 1.65; }
       .bullet-text strong { color: var(--g800); font-weight: 600; }
 
       /* Conveyor */
@@ -1618,25 +1618,25 @@
       .conv-camera-body { width: 44px; height: 30px; background: #3a4a57; border-radius: 6px; display: flex; align-items: center; justify-content: center; }
       .conv-camera-body svg { width: 18px; height: 18px; stroke: #fff; stroke-width: 1.8; }
       .conv-camera-leg { width: 2px; height: 14px; background: #5a6a7a; }
-      .conv-part { position: absolute; bottom: 58px; width: 42px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; transition: left 1.2s cubic-bezier(0.25,0.46,0.45,0.94); }
+      .conv-part { position: absolute; bottom: 58px; width: 42px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; transition: left 1.2s cubic-bezier(0.25,0.46,0.45,0.94); }
       .conv-part-a { background: #dde8f8; border: 1.5px solid rgba(0,85,179,.25); color: var(--blue-d); }
       .conv-part-b { background: #fdeedd; border: 1.5px solid rgba(212,135,10,.3); color: var(--gold); }
       .detection-box { position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); border: 2.5px solid var(--green); border-radius: 4px; width: 52px; height: 48px; opacity: 0; transition: opacity .3s; }
       .detection-box.show { opacity: 1; }
       .result-card { position: absolute; right: 12px; top: 50%; background: #fff; border: 1.5px solid var(--g100); border-radius: 10px; padding: 10px 14px; width: 110px; opacity: 0; transform: translateY(-50%) translateX(10px); transition: opacity .35s, transform .35s cubic-bezier(0.23,1,0.32,1); box-shadow: 0 2px 12px rgba(0,0,0,.08); }
       .result-card.show { opacity: 1; transform: translateY(-50%) translateX(0); }
-      .result-pn { font-size: 14px; font-weight: 700; color: var(--g300); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 3px; }
-      .result-val { font-size: 14px; font-weight: 700; color: var(--g800); margin-bottom: 6px; }
-      .result-conf { font-size: 14px; color: var(--g400); margin-bottom: 8px; }
-      .result-verdict { font-size: 14px; font-weight: 700; padding: 4px 10px; border-radius: 6px; text-align: center; }
+      .result-pn { font-size: 9px; font-weight: 700; color: var(--g300); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 3px; }
+      .result-val { font-size: 12px; font-weight: 700; color: var(--g800); margin-bottom: 6px; }
+      .result-conf { font-size: 10px; color: var(--g400); margin-bottom: 8px; }
+      .result-verdict { font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 6px; text-align: center; }
       .verdict-ok { background: rgba(30,138,76,.1); color: var(--green); border: 1px solid rgba(30,138,76,.25); }
       .verdict-fail { background: rgba(176,44,44,.1); color: var(--red); border: 1px solid rgba(176,44,44,.25); }
 
       /* Pose */
       #poseStage { height: 240px; background: #0d1824; display: flex; overflow: hidden; }
       .sop-panel { width: 130px; flex-shrink: 0; padding: 14px 12px; border-right: 1px solid var(--g100); background: #fff; display: flex; flex-direction: column; }
-      .sop-title { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--g300); margin-bottom: 10px; }
-      .sop-step { display: flex; align-items: center; gap: 7px; padding: 5px 0; font-size: 14px; color: var(--g400); font-weight: 500; transition: color .3s; }
+      .sop-title { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--g300); margin-bottom: 10px; }
+      .sop-step { display: flex; align-items: center; gap: 7px; padding: 5px 0; font-size: 11px; color: var(--g400); font-weight: 500; transition: color .3s; }
       .sop-step.done { color: var(--green); }
       .sop-step.warn { color: var(--red); }
       .sop-check { width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid var(--g200); flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: all .3s; }
@@ -1646,23 +1646,23 @@
       .sop-step.done .sop-check svg, .sop-step.warn .sop-check svg { opacity: 1; stroke: #fff; }
       .pose-area { flex: 1; position: relative; display: flex; align-items: center; justify-content: center; }
       .pose-svg { width: 100%; height: 100%; display: block; }
-      .warn-banner { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(176,44,44,.9); color: #fff; font-size: 14px; font-weight: 700; padding: 7px 12px; display: flex; align-items: center; gap: 7px; opacity: 0; transition: opacity .35s; z-index: 5; }
+      .warn-banner { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(176,44,44,.9); color: #fff; font-size: 11px; font-weight: 700; padding: 7px 12px; display: flex; align-items: center; gap: 7px; opacity: 0; transition: opacity .35s; z-index: 5; }
       .warn-banner.show { opacity: 1; }
       .warn-banner svg { width: 14px; height: 14px; stroke: #fff; stroke-width: 2.5; flex-shrink: 0; }
 
       /* Safety cameras */
       #safetyStage { height: 240px; background: #0d1520; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 2px; position: relative; overflow: hidden; }
       .cam-cell { position: relative; background: #111d2c; overflow: hidden; }
-      .cam-label { position: absolute; top: 6px; left: 8px; font-size: 14px; font-weight: 700; color: rgba(255,255,255,.45); letter-spacing: .05em; z-index: 2; }
+      .cam-label { position: absolute; top: 6px; left: 8px; font-size: 9px; font-weight: 700; color: rgba(255,255,255,.45); letter-spacing: .05em; z-index: 2; }
       .cam-status { position: absolute; top: 6px; right: 8px; width: 7px; height: 7px; border-radius: 50%; background: #2ecc71; z-index: 2; }
       .cam-status.alert-blink { background: #e74c3c; animation: blink 0.7s ease infinite; }
       .danger-zone { position: absolute; right: 0; top: 0; bottom: 0; width: 38%; border-left: 1.5px dashed rgba(176,44,44,.6); background: rgba(176,44,44,.08); display: flex; align-items: flex-start; justify-content: center; padding-top: 8px; }
-      .dz-label { font-size: 14px; font-weight: 700; color: rgba(176,44,44,.7); letter-spacing: .06em; text-transform: uppercase; writing-mode: vertical-rl; white-space: nowrap; }
+      .dz-label { font-size: 8px; font-weight: 700; color: rgba(176,44,44,.7); letter-spacing: .06em; text-transform: uppercase; writing-mode: vertical-rl; white-space: nowrap; }
       .cam-person { position: absolute; bottom: 12px; transition: left 1.8s cubic-bezier(0.25,0.46,0.45,0.94); }
       .cam-person svg { width: 18px; height: 32px; }
       .alert-overlay { position: absolute; inset: 0; border: 2px solid rgba(176,44,44,.8); opacity: 0; transition: opacity .3s; pointer-events: none; z-index: 3; }
       .alert-overlay.show { opacity: 1; }
-      .global-alert { position: absolute; top: 0; left: 0; right: 0; background: rgba(176,44,44,.92); color: #fff; font-size: 14px; font-weight: 700; padding: 6px 12px; display: flex; align-items: center; gap: 8px; z-index: 10; transform: translateY(-100%); transition: transform .35s cubic-bezier(0.23,1,0.32,1); }
+      .global-alert { position: absolute; top: 0; left: 0; right: 0; background: rgba(176,44,44,.92); color: #fff; font-size: 11px; font-weight: 700; padding: 6px 12px; display: flex; align-items: center; gap: 8px; z-index: 10; transform: translateY(-100%); transition: transform .35s cubic-bezier(0.23,1,0.32,1); }
       .global-alert.show { transform: translateY(0); }
       .global-alert svg { width: 13px; height: 13px; stroke: #fff; stroke-width: 2.5; flex-shrink: 0; }
 
