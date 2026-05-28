@@ -1801,15 +1801,24 @@
         .anim-stage { width: 100%; }
         .anim-bullets { flex: 0 0 auto; width: 100%; }
 
+        /* ─────────────────────────────────────────
+           Part 2-B (AI MES) — mobile refinements
+        ───────────────────────────────────────── */
+        .dash-inner { padding: 16px 12px 20px !important; }
+
         /* ── MES Tab 0: 資料整合 ── */
         #p2bBody0 .dash-inner { flex-direction: column !important; }
-        .ai-chat-panel { width: 100% !important; box-sizing: border-box; }
-        .acp-messages { max-height: 160px; }
-        .station-card { min-width: calc(50% - 6px) !important; }
-        .metrics-row { flex-wrap: wrap; }
+        .ai-chat-panel { width: 100% !important; box-sizing: border-box; min-width: 0; }
+        .acp-messages { max-height: 180px; }
+        .acp-msg { max-width: 100%; min-width: 0; }
+        .acp-bubble { max-width: 88%; word-break: break-word; overflow-wrap: anywhere; box-sizing: border-box; }
+        .station-row { gap: 6px; }
+        .station-card { min-width: calc(50% - 4px) !important; padding: 9px 10px; box-sizing: border-box; }
+        .metrics-row { flex-wrap: wrap; gap: 8px; }
 
-        /* ── MES Tab 1 & 2: stat bar top padding ── */
-        .mes-stat-bar { padding-top: 16px !important; }
+        /* ── MES top stat bar (Tab 1 & 2): wrap from 4-col flex to 2×2 grid ── */
+        .mes-stat-bar { padding-top: 16px !important; display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px 8px !important; }
+        .mes-stat-bar > div { flex: unset !important; padding-bottom: 0 !important; }
 
         /* ── MES Tab 1: 智慧排程 ── */
         .sched-main-row { flex-direction: column !important; }
@@ -1820,6 +1829,11 @@
           box-sizing: border-box;
           overflow-y: visible;
         }
+        /* Gantt — scroll horizontally instead of crushing labels & blocks */
+        .sched-gantt { overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 16px 12px 18px !important; }
+        .gantt-header, .gantt-row { min-width: 480px; }
+        .gantt-machine { width: 56px; font-size: 12px; }
+        .gantt-header { padding-left: 56px; }
 
         /* ── MES Tab 2: 故障預測 ── */
         .fault-layout { flex-direction: column !important; }
@@ -1835,7 +1849,16 @@
         .fault-equip .equip-title { grid-column: 1 / -1; }
         .fault-equip .equip-item { border-bottom: none !important; padding: 6px 0; }
         .fault-alerts-col { width: 100% !important; border-left: none !important; border-top: 1px solid #243550; padding: 12px 12px; box-sizing: border-box; }
-        .fault-chart-col { padding: 14px 12px; }
+        .fault-chart-col { padding: 14px 12px; min-width: 0; }
+        .chart-area { min-width: 0; }
+        .chart-predict-note { max-width: 100px; font-size: 10.5px; padding: 5px 7px; right: 6px; }
+      }
+
+      /* Very narrow phones (≤ 420px) — collapse station cards to 1 column */
+      @media (max-width: 420px) {
+        .station-card { min-width: 100% !important; }
+        .mes-stat-bar > div { padding: 0 4px !important; }
+        .acp-bubble { max-width: 92%; }
       }
 
       /* ═══════════════════════════════════════
