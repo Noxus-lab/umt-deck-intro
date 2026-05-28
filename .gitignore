@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor / OS
+*.swp
+*.swo
+Thumbs.db
+
+# Local backups
+*.bak
